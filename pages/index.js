@@ -1,19 +1,16 @@
-// CSS
-import styles from '../styles/Home.module.css';
+// Dependencies
+import React from 'react';
 
 // Components
-import NextHead from '../components/Layout/NextHead';
-import Navbar from '../components/Layout/Navbar';
-import Footer from '../components/Layout/Footer';
+import Wrapper from '../components/Layout/Wrapper';
+import Header from '../components/Pages/Home/Header';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <NextHead />
-      <Navbar />
-      <main className={styles.main}></main>
-
-      <Footer />
-    </div>
+    <Wrapper>
+      <main>
+        <Header />
+      </main>
+    </Wrapper>
   );
 }
