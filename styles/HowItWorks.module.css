@@ -1,0 +1,26 @@
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 85%;
+  margin: 5rem auto;
+}
+
+.step {
+  border: 1px solid #c7c7c76b;
+  box-shadow: 2px 2px 5px #2e2e2e80;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 15px;
+}
+
+.step i {
+  color: #00aaf0;
+  font-size: 2.5rem;
+}
+
+.step h4 {
+  margin: 20px 0;
+  display: inline;
+  font-size: 2rem;
+}

@@ -31,15 +31,25 @@ const Navbar = () => {
           </li>
           <li className='nav-item'>
             <a className='nav-link' href='#'>
-              Pricing
+              Mission
             </a>
           </li>
           <li className='nav-item'>
             <a className='nav-link' href='#'>
+              About
+            </a>
+          </li>
+          <li className='nav-item'>
+            <a className='nav-link' href='#'>
+              Pricing
+            </a>
+          </li>
+          <li className={`btn btn-secondary ${styles.signIn}`}>
+            <a className='nav-link' href='#'>
               Sign In
             </a>
           </li>
-          <li className={`nav-item ${styles.navCTA}`}>
+          <li className={`btn btn-primary ${styles.navCTA}`}>
             <a className='nav-link' href='#'>
               Get Started
             </a>

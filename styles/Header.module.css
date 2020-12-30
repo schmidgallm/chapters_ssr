@@ -1,35 +1,60 @@
 .header {
-  min-height: 40vh;
+  height: 70vh;
+  background-image: url('/static/bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  padding: 0 30px;
+  text-align: left;
+}
+
+.copy {
   text-align: center;
-  background-color: #333333;
+  width: 60%;
+  margin: 0 auto;
 }
 
-.fontLight {
-  font-weight: 100;
-  font-size: 4rem;
-  margin: 0;
+.copy h1 {
+  color: #fff;
+  text-shadow: 0 0 2px #2e2e2e;
+  font-size: 3rem;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.copy h1 span {
   color: #fff;
 }
 
-.fontBold {
-  font-weight: 700;
-  color: #fff;
-}
-
-.header p {
+.copy p {
   font-size: 1.2rem;
-  margin: 25px 0;
   color: #fff;
+  margin-top: 10px;
 }
 
-.header btn {
-  margin: 0;
+.copy form {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 3rem;
 }
 
-.header img {
+.copy form input {
+  width: 50%;
+  padding: 25px;
+  margin-right: 15px;
+}
+
+.copy form button {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.img img {
   width: 100%;
 }
