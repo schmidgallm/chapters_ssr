@@ -6,7 +6,7 @@ const HowItWorks = () => {
   return (
     <div className='section'>
       <h2>
-        <span>Create</span> or vote on the best stories
+        We help you write it. <span>Don't fear</span> confidence or skill
       </h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti non
@@ -26,9 +26,9 @@ const HowItWorks = () => {
           <i className='fa fa-paragraph'></i>
           <h4>Chapter Submissions</h4>
           <p>
-            Total of 10 chapters. Each chapter remains live for limited time.
-            Submit what you think should happen then vote on best one. Don't
-            worry about perfection as we hire the best editors.
+            We guide you on the basic plot points for each of the 10 chapters to
+            help you with focusing on the creative. Submit what you think should
+            happen then vote on best one.
           </p>
         </div>
         <div className={styles.step}>
@@ -41,7 +41,7 @@ const HowItWorks = () => {
           </p>
         </div>
       </div>
-      <button className='btn btn-primary'>See More</button>
+      <button className='btn btn-primary'>Start Writing and Get Paid</button>
     </div>
   );
 };
