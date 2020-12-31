@@ -6,14 +6,16 @@ const HowItWorks = () => {
   return (
     <div className='section'>
       <h2>
-        We help you write it. <span>Don't fear</span> confidence or skill
+        <span>You control the story.</span> Community driven novels.
       </h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti non
-        totam, omnis eos harum minus neque explicabo libero porro molestias.
+      <p className={`mt-4 ${styles.paragraph}`}>
+        3 step process to bring your ideas to life. Have an idea on how the next
+        chapter should happen? Just submit your idea and best idea is voted.
       </p>
+
       <div className={styles.steps}>
         <div className={styles.step}>
+          <span>Step 1</span>
           <i className='fa fa-lightbulb-o'></i>
           <h4>Story Creation</h4>
           <p>
@@ -23,6 +25,7 @@ const HowItWorks = () => {
           </p>
         </div>
         <div className={styles.step}>
+          <span>Step 2</span>
           <i className='fa fa-paragraph'></i>
           <h4>Chapter Submissions</h4>
           <p>
@@ -32,6 +35,7 @@ const HowItWorks = () => {
           </p>
         </div>
         <div className={styles.step}>
+          <span>Step 3</span>
           <i className='fa fa-edit'></i>
           <h4>Editing & Publishing</h4>
           <p>

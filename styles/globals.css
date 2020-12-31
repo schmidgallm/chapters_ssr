@@ -93,3 +93,14 @@ h4 span {
 .section-dark p {
   color: var(--text-secondary);
 }
+
+.check {
+  opacity: 0.3;
+  transition: all 0.2s ease-in;
+}
+
+.checkActive {
+  opacity: 1;
+  font-weight: bold;
+  color: #0085be;
+}

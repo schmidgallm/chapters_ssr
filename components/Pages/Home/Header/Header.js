@@ -15,7 +15,7 @@ const Header = () => {
         <form>
           <input
             type='email'
-            class='form-control'
+            className='form-control'
             id='exampleInputEmail1'
             aria-describedby='emailHelp'
             placeholder='Enter your email address'
