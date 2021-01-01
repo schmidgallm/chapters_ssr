@@ -1,4 +1,68 @@
 .footer {
-  width: 100vw;
-  height: 10vh;
+  background-color: #2e2e2e;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footerColumn {
+  color: #fff;
+  text-align: left;
+}
+
+.footerColumn h5,
+.footerColumn ul li,
+.footerColumn i {
+  color: #fff;
+}
+
+.footerColumn h5 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.footerColumn ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerColumn ul li {
+  margin-bottom: 0.5rem;
+  color: lightgray;
+}
+
+.footerColumn form {
+  width: 100%;
+}
+
+.footerColumn form input {
+  margin-bottom: 0;
+}
+
+.socialLinks ul {
+  display: flex;
+}
+
+.socialLinks ul li {
+  margin-right: 20px;
+}
+.socialLinks i {
+  margin-top: 20px;
+  font-size: 1.3rem;
+}
+
+.companyInfo {
+  background-color: #2e2e2e;
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.companyInfo p,
+.companyInfo span {
+  color: #fff;
+}
+
+.companyInfo span {
+  color: #00aaf0;
 }

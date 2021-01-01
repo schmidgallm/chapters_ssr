@@ -50,15 +50,16 @@ const Problem = () => {
   return (
     <div className='section'>
       <h2>
-        <span>Writing is hard.</span> So we make it easy.
+        How Chapter Box can <span>help you</span>
       </h2>
       <div className={styles.problemSubSection}>
         <div>
           <ul>
             <li>
               <h3>
-                We all had ingenious story ideas and epic ideas. So why is it
-                only <span>97% of writers never complete</span> thier novel?
+                We all have thoughts of great stories filled with imagination.
+                So why is it only <span>97% of writers never complete</span>{' '}
+                thier novel?
               </h3>
             </li>
             <li>
@@ -76,22 +77,22 @@ const Problem = () => {
             <i id='a' className='ml-auto fa fa-check-circle check'></i>
           </div>
           <div className={styles.option} onClick={() => changeStyle('b')}>
-            <i className='fa fa-lightbulb-o'></i>
+            <i className='fa fa-book'></i>
             <h5>Never written full novel</h5>
             <i id='b' className='ml-auto fa fa-check-circle check'></i>
           </div>
           <div className={styles.option} onClick={() => changeStyle('c')}>
-            <i className='fa fa-lightbulb-o'></i>
+            <i className='fa fa-dollar'></i>
             <h5>Want to get piad for writing</h5>
             <i id='c' className='ml-auto fa fa-check-circle check'></i>
           </div>
           <div className={styles.option} onClick={() => changeStyle('d')}>
-            <i className='fa fa-lightbulb-o'></i>
+            <i className='fa fa-pencil'></i>
             <h5>Want to become an author</h5>
             <i id='d' className='ml-auto fa fa-check-circle check'></i>
           </div>
           <div className={styles.option} onClick={() => changeStyle('e')}>
-            <i className='fa fa-lightbulb-o'></i>
+            <i className='fa fa-frown-o'></i>
             <h5>Tired of stories with bad ending</h5>
             <i id='e' className='ml-auto fa fa-check-circle check'></i>
           </div>

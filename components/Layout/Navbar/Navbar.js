@@ -44,12 +44,12 @@ const Navbar = () => {
               Pricing
             </a>
           </li>
-          <li className={`btn btn-secondary ${styles.signIn}`}>
+          <li className='nav-item signIn'>
             <a className='nav-link' href='#'>
               Sign In
             </a>
           </li>
-          <li className={`btn btn-primary ${styles.navCTA}`}>
+          <li className='nav-item navCTA'>
             <a className='nav-link' href='#'>
               Get Started
             </a>

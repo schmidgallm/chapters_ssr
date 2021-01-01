@@ -29,6 +29,15 @@
   color: #fff;
 }
 
+.copy h3 {
+  color: #fff;
+  margin-top: 1.5rem;
+}
+
+.copy h3 span {
+  color: #fff;
+}
+
 .copy p {
   font-size: 1.2rem;
   color: #fff;

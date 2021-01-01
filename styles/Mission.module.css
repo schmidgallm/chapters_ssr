@@ -1,0 +1,23 @@
+.authority {
+  margin-top: 3rem;
+}
+.authority ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tag {
+  color: #00aaf0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  padding: 1rem;
+  margin-top: 1rem;
+  display: inline-block;
+}
+.tag i {
+  color: #00aaf0;
+  margin-right: 3rem;
+}

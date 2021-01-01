@@ -6,9 +6,9 @@ const HowItWorks = () => {
   return (
     <div className='section'>
       <h2>
-        <span>You control the story.</span> Community driven novels.
+        <span>Writing is hard.</span> So we make it easy.
       </h2>
-      <p className={`mt-4 ${styles.paragraph}`}>
+      <p className={`mt-3 ${styles.paragraph}`}>
         3 step process to bring your ideas to life. Have an idea on how the next
         chapter should happen? Just submit your idea and best idea is voted.
       </p>

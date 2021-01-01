@@ -5,7 +5,7 @@
   --text-secondary: #f2f2f2;
   --bg-dark: #333333;
   --bg-dark-secondary: #22272d;
-  --bg-light: #f2f2f2;
+  --bg-light: #dbdbdb;
   --bg-primary: #ff7518;
   --bg-secondary: #00aaf0;
   --bg-accent1: #432f79;
@@ -94,6 +94,10 @@ h4 span {
   color: var(--text-secondary);
 }
 
+.section-p-offset {
+  padding-top: 3rem;
+}
+
 .check {
   opacity: 0.3;
   transition: all 0.2s ease-in;
@@ -103,4 +107,30 @@ h4 span {
   opacity: 1;
   font-weight: bold;
   color: #0085be;
+}
+
+/* Navbar */
+.signIn {
+  margin-left: 10px;
+  border-radius: 9999px;
+  padding: 0 10px;
+  background-color: var(--bg-secondary);
+}
+
+.navCTA {
+  margin-left: 10px;
+  border-radius: 9999px;
+  padding: 0 10px;
+  background-color: var(--bg-primary);
+}
+
+/* Media Queries */
+@media screen and (max-width: 990px) {
+  .signIn,
+  .navCTA {
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+    background-color: transparent;
+  }
 }

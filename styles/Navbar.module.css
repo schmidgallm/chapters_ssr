@@ -1,5 +1,5 @@
 .navbarBackground {
-  background-color: transparent;
+  background-color: #22272d;
   padding: 20px;
   color: #2e2e2e;
   position: fixed;
@@ -12,19 +12,6 @@
 .navLink {
   color: #2e2e2e;
 }
-
-.signIn {
-  margin-left: 10px;
-  border-radius: 9999px;
-  padding: 0 10px;
-}
-
-.navCTA {
-  margin-left: 10px;
-  border-radius: 9999px;
-  padding: 0 10px;
-}
-
 .navbarToggler {
   color: black;
 }

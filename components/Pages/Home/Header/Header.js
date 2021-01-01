@@ -12,6 +12,7 @@ const Header = () => {
           Everyone has an <span>Idea</span>. Anyone can become an{' '}
           <span>Author</span>
         </h1>
+        <h3>Community driven novels | You control the story.</h3>
         <form>
           <input
             type='email'
