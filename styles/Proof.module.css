@@ -28,6 +28,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  text-align: left;
 }
 
 .proofHeader ul li {
@@ -48,4 +49,44 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 990px) {
+  .proof {
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .proofHeader {
+    width: 95%;
+  }
+
+  .proofHeader h2 {
+    text-align: center;
+  }
+
+  .proofHeader hr {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: #00aaf0;
+  }
+
+  .proofHeader ul li {
+    color: #fff;
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+
+  .proofHeader button {
+    width: 100%;
+    display: block;
+  }
+
+  .proofImage {
+    display: none;
+  }
 }

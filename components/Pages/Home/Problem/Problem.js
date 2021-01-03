@@ -49,7 +49,7 @@ const Problem = () => {
   };
   return (
     <div className='section'>
-      <h2>
+      <h2 className={styles.problemHeader}>
         How Chapter Box can <span>help you</span>
       </h2>
       <div className={styles.problemSubSection}>

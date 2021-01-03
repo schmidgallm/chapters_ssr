@@ -48,7 +48,7 @@
   margin-top: 50px;
   display: flex;
   justify-content: center;
-  width: 50%;
+  width: 65%;
   margin: 0 auto;
   margin-top: 3rem;
 }
@@ -66,4 +66,56 @@
 
 .img img {
   width: 100%;
+}
+
+@media all and (max-width: 1600px) {
+  .copy form {
+    width: 85%;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .copy form {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 990px) {
+  .header {
+    height: 70vh;
+  }
+
+  .copy {
+    width: 85%;
+  }
+
+  .copy h1 {
+    font-size: 2rem;
+    width: 100%;
+    margin: 0;
+  }
+
+  .copy h3 {
+    margin: 10px auto;
+    font-size: 1.3rem;
+  }
+
+  .copy form {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .copy form input {
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+  }
+
+  .copy form button {
+    width: 100%;
+    margin-top: 10px;
+  }
 }

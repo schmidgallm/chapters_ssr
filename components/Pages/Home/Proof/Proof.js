@@ -23,7 +23,7 @@ const Proof = () => {
           </ul>
           <button className='btn btn-secondary'>Join Now</button>
         </div>
-        <div className={`mr-auto ${styles.proofImage}`}></div>
+        <div className={styles.proofImage}></div>
       </div>
     </div>
   );

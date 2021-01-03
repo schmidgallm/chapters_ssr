@@ -133,4 +133,13 @@ h4 span {
     padding: 0;
     background-color: transparent;
   }
+
+  .section {
+    padding: 4rem 0.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .section h2 {
+    font-size: 1.9rem;
+  }
 }

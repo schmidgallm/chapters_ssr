@@ -9,13 +9,20 @@ const Footer = () => {
     <Fragment>
       <footer className={`section ${styles.footer} pb-2`}>
         <div className={styles.footerColumn}>
-          <h5>FAQ</h5>
-          <ul>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-          </ul>
+          <div className={styles.socialLinks}>
+            <h3>Chapter Box</h3>
+            <ul>
+              <li>
+                <i class='fa fa-facebook'></i>
+              </li>
+              <li>
+                <i class='fa fa-twitter'></i>
+              </li>
+              <li>
+                <i class='fa fa-linkedin'></i>
+              </li>
+            </ul>
+          </div>
         </div>
         <div className={styles.footerColumn}>
           <h5>FAQ</h5>
@@ -51,19 +58,6 @@ const Footer = () => {
               Submit
             </button>
           </form>
-          <div className={styles.socialLinks}>
-            <ul>
-              <li>
-                <i class='fa fa-facebook'></i>
-              </li>
-              <li>
-                <i class='fa fa-twitter'></i>
-              </li>
-              <li>
-                <i class='fa fa-linkedin'></i>
-              </li>
-            </ul>
-          </div>
         </div>
       </footer>
       <div className={`section ${styles.companyInfo} py-3`}>
