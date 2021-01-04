@@ -1,121 +1,75 @@
 .header {
-  height: 70vh;
-  background-image: url('/static/bg.png');
-  background-position: center;
+  height: 88vh;
+  background-image: url('/static/chapters_header_background_alt5.png');
+  background-position: bottom right;
   background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  text-align: left;
+  background-size: 115em;
 }
 
-.copy {
-  text-align: center;
-  width: 60%;
+.headerWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  width: 75%;
   margin: 0 auto;
 }
 
-.copy h1 {
-  color: #fff;
-  text-shadow: 0 0 2px #2e2e2e;
-  font-size: 3rem;
-  width: 65%;
-  margin: 0 auto;
+.headerCopy {
+  margin-top: 5rem;
 }
 
-.copy h1 span {
-  color: #fff;
+.headerCopy h1 {
+  margin: 0;
 }
 
-.copy h3 {
-  color: #fff;
-  margin-top: 1.5rem;
+.headerCopy hr {
+  width: 25%;
+  margin: 1rem 0;
+  margin-bottom: 3rem;
+  background-color: #ff7518;
+  height: 5px;
 }
 
-.copy h3 span {
-  color: #fff;
-}
-
-.copy p {
-  font-size: 1.2rem;
-  color: #fff;
-  margin-top: 10px;
-}
-
-.copy form {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  width: 65%;
-  margin: 0 auto;
-  margin-top: 3rem;
-}
-
-.copy form input {
-  width: 50%;
-  padding: 25px;
-  margin-right: 15px;
-}
-
-.copy form button {
+.headerCopy h3 {
+  font-size: 1.3rem;
+  margin: 0;
   font-weight: 700;
-  text-transform: uppercase;
 }
 
-.img img {
-  width: 100%;
+.headerCopy h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 1rem;
 }
 
-@media all and (max-width: 1600px) {
-  .copy form {
-    width: 85%;
-  }
+.headerCopy form {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
 }
 
-@media all and (max-width: 1200px) {
-  .copy form {
-    width: 100%;
-  }
+.headerCopy form input {
+  padding: 10px;
+  width: 45%;
+  box-shadow: 2px 2px 5px #2e2e2e62;
 }
 
-@media all and (max-width: 990px) {
-  .header {
-    height: 70vh;
-  }
+.headerCopy form button {
+  margin-left: 10px;
+  font-weight: 700;
+}
 
-  .copy {
-    width: 85%;
-  }
+.headerCopy p {
+  margin-top: 2rem;
+}
 
-  .copy h1 {
-    font-size: 2rem;
-    width: 100%;
-    margin: 0;
-  }
+.headerImage {
+  margin-top: 8rem;
+  text-align: center;
+}
 
-  .copy h3 {
-    margin: 10px auto;
-    font-size: 1.3rem;
-  }
-
-  .copy form {
-    width: 75%;
-    margin: 0 auto;
-    margin-top: 30px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .copy form input {
-    width: 100%;
-    margin: 0;
-    padding: 5px;
-  }
-
-  .copy form button {
-    width: 100%;
-    margin-top: 10px;
-  }
+.headerImage img {
+  height: 100%;
+  width: 50%;
+  margin: 0 auto;
 }

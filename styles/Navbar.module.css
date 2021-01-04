@@ -1,17 +1,11 @@
 .navbarBackground {
   background-color: #22272d;
-  padding: 20px;
   color: #2e2e2e;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  z-index: 5;
+  height: 8vh;
 }
 
-.navLink {
-  color: #2e2e2e;
-}
-.navbarToggler {
-  color: black;
+.navbarBackground a:first-child {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2rem;
 }

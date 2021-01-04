@@ -80,6 +80,10 @@ h4 span {
 
 .section-dark {
   background-color: var(--bg-dark);
+  background-image: url('/static/chapters_texture_dark_alt.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .section-dark h2 {

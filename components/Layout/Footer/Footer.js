@@ -1,72 +1,48 @@
 // Dependencies
-import React, { Fragment } from 'react';
+import React from 'react';
+import Link from 'next/link';
 
 // CSS
 import styles from '../../../styles/Footer.module.css';
 
 const Footer = () => {
   return (
-    <Fragment>
-      <footer className={`section ${styles.footer} pb-2`}>
-        <div className={styles.footerColumn}>
-          <div className={styles.socialLinks}>
-            <h3>Chapter Box</h3>
-            <ul>
-              <li>
-                <i class='fa fa-facebook'></i>
-              </li>
-              <li>
-                <i class='fa fa-twitter'></i>
-              </li>
-              <li>
-                <i class='fa fa-linkedin'></i>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className={styles.footerColumn}>
-          <h5>FAQ</h5>
-          <ul>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-          </ul>
-        </div>
-        <div className={styles.footerColumn}>
-          <h5>FAQ</h5>
-          <ul>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-          </ul>
-        </div>
-        <div className={styles.footerColumn}>
-          <h5>SUBSCRIBE</h5>
-          <form>
-            <div class='form-group'>
-              <input
-                type='email'
-                class='form-control'
-                id='exampleInputEmail1'
-                aria-describedby='emailHelp'
-              />
-            </div>
+    <footer className={`section ${styles.footer}`}>
+      <div className={styles.footerCTA}>
+        <h2>
+          Get the tools to become the next best selling New York Times author
+        </h2>
+        <hr />
+        <form>
+          <input
+            type='email'
+            class='form-control'
+            id='exampleInputEmail1'
+            aria-describedby='emailHelp'
+          />
 
-            <button type='submit' class='btn btn-secondary'>
-              Submit
-            </button>
-          </form>
-        </div>
-      </footer>
-      <div className={`section ${styles.companyInfo} py-3`}>
+          <button type='submit' class='btn btn-primary'>
+            Join our Community
+          </button>
+        </form>
         <p>
-          @2021 All rights reserved. <span>Chapters Publishing, LLC.</span>
+          Already part of the community? Sign in{' '}
+          <Link href='#'>
+            <a>Here</a>
+          </Link>{' '}
         </p>
+        <h1>Chapter Box</h1>
       </div>
-    </Fragment>
+    </footer>
   );
 };
 
 export default Footer;
+
+/*
+  <div className={styles.socialLinks}>
+          <i class='fa fa-facebook'></i>
+          <i class='fa fa-twitter'></i>
+          <i class='fa fa-linkedin'></i>
+        </div>
+*/

@@ -1,97 +1,43 @@
 .footer {
-  background-color: #2e2e2e;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  width: 75%;
+  margin: 0 auto;
 }
 
-.footerColumn {
-  color: #fff;
+.footerCTA {
   text-align: left;
-}
-
-.footerColumn h5,
-.footerColumn ul li,
-.footerColumn i {
-  color: #fff;
-}
-
-.footerColumn h5 {
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.footerColumn ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footerColumn ul li {
-  margin-bottom: 0.5rem;
-  color: lightgray;
-}
-
-.footerColumn form {
   width: 100%;
 }
 
-.footerColumn form input {
-  margin-bottom: 0;
+.footerCTA h2 {
+  font-size: 2rem;
+  font-weight: 700;
 }
 
-.socialLinks h3 {
-  color: #fff;
-  margin: 0;
-}
-.socialLinks ul {
-  display: flex;
-}
-
-.socialLinks ul li {
-  margin-right: 20px;
-}
-.socialLinks i {
-  margin-top: 20px;
-  font-size: 1.3rem;
+.footerCTA hr {
+  width: 25%;
+  margin: 1rem 0;
+  background-color: #ff7518;
+  height: 5px;
 }
 
-.companyInfo {
-  background-color: #2e2e2e;
-  padding-bottom: 1rem;
+.footerCTA form {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  margin-top: 2rem;
 }
 
-.companyInfo p,
-.companyInfo span {
-  color: #fff;
+.footerCTA form input {
+  height: 45px;
+  width: 50%;
+  margin-right: 10px;
 }
 
-.companyInfo span {
-  color: #00aaf0;
+.footerCTA p {
+  margin-top: 1rem;
 }
-
-@media screen and (max-width: 990px) {
-  .footer {
-    background-color: #2e2e2e;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .footerColumn h5 {
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-  }
-
-  .footerColumn form {
-    width: 100%;
-  }
-
-  .companyInfo {
-    background-color: #2e2e2e;
-    padding-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
+.footerCTA h1 {
+  margin: 0;
 }

@@ -1,0 +1,56 @@
+.comparison {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #2e2e2e;
+  min-height: 60vh;
+}
+
+.comparisonSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.comparisonSection h2 {
+  color: #fff;
+  font-weight: 700;
+  color: #00aaf0;
+  font-size: 10rem;
+}
+
+.comparisonSection ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.comparisonSection ul li {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.comparisonSection ul li i {
+  margin-right: 20px;
+  color: #00aaf0;
+}
+
+.comparisonSection:first-child {
+  background-color: #2e2e2e2e;
+  background-image: url('/static/chapters_texture_dark.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.comparisonSection:last-child {
+  background-color: #fff;
+  background-image: url('/static/chapters_texture_light.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.comparisonSection:last-child ul li {
+  color: #2e2e2e;
+}

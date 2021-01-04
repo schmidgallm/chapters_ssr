@@ -4,6 +4,7 @@ import React from 'react';
 // Components
 import Wrapper from '../components/Layout/Wrapper';
 import Header from '../components/Pages/Home/Header';
+import Comparison from '../components/Pages/Home/Comparison';
 import Problem from '../components/Pages/Home/Problem';
 import HowItWorks from '../components/Pages/Home/HowItWorks';
 import Proof from '../components/Pages/Home/Proof';
@@ -14,6 +15,7 @@ export default function Home() {
     <Wrapper>
       <main>
         <Header />
+        <Comparison />
         <HowItWorks />
         <Proof />
         <Problem />
