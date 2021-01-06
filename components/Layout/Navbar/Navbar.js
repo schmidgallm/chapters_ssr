@@ -5,7 +5,7 @@ import styles from '../../../styles/Navbar.module.css';
 
 const Navbar = () => {
   return (
-    <nav className={`navbar ${styles.navbarBackground}`}>
+    <nav id='navbar' className={`navbar ${styles.navbarBackground}`}>
       <Link href='/'>
         <a className='navbar-brand ml-auto'>Chapter Box</a>
       </Link>

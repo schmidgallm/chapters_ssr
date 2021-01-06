@@ -1,0 +1,51 @@
+.registerHeader {
+  height: 100vh;
+  background-color: black;
+  background-image: url('/static/chapters_register_header.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.registerCopy {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.registerCopy hr {
+  width: 15%;
+  margin: 1rem 0;
+  background-color: #ff7518;
+  border: none;
+  height: 5px;
+}
+
+.registerCopy h1 {
+  color: #ff7518;
+  font-size: 3rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.registerCopy h2 {
+  margin: 2rem 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.registerCopy p {
+  color: #fff;
+}
+
+.registerCopy button {
+  margin: 0.5rem 0;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+}

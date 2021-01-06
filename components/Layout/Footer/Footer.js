@@ -16,12 +16,12 @@ const Footer = () => {
         <form>
           <input
             type='email'
-            class='form-control'
+            className='form-control'
             id='exampleInputEmail1'
             aria-describedby='emailHelp'
           />
 
-          <button type='submit' class='btn btn-primary'>
+          <button type='submit' className='btn btn-primary'>
             Join our Community
           </button>
         </form>

@@ -1,0 +1,37 @@
+.registerForm {
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formContainer form {
+  min-width: 35vw;
+  margin: 0 auto;
+  padding: 25px;
+  box-shadow: 2px 2px 10px #2e2e2e;
+}
+
+.formContainer form h3 {
+  font-weight: 700;
+  color: #ff7518;
+  margin-bottom: 20px;
+}
+
+.formHr {
+  height: 5px;
+  background-color: #ff7518;
+  width: 15%;
+  margin: 2rem 0;
+}
+
+.formContainer form p {
+  margin-top: 20px;
+}
+
+.formBottomHr {
+  margin: 2rem 0;
+  background-color: #00aaf0;
+}
