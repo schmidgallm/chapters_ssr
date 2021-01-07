@@ -1,11 +1,30 @@
 // Dependencies
-import React from 'react';
+import React, { useState } from 'react';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 // CSS
 import styles from '../../../../styles/Header.module.css';
 
 const Header = () => {
+  // init next router
+  const router = useRouter();
+
+  // Init state
+  const [userEmail, setUserEmail] = useState('');
+
+  // on change handler
+  const onChange = e => setUserEmail(e.target.value);
+
+  // on submit handler
+  const onSubmit = e => {
+    e.preventDefault();
+    router.push({
+      pathname: '/register',
+      query: { data: userEmail },
+    });
+  };
+
   return (
     <div className={styles.header}>
       <div className={styles.headerWrapper}>
@@ -20,19 +39,23 @@ const Header = () => {
             created by you and chosen chapter is voted by community.
           </h3>
           <h4>Start 2021 brand new and make money one chapter at a time.</h4>
-          <form>
+          <form onSubmit={onSubmit}>
             <input
               type='email'
               className='form-control'
               id='exampleInputEmail1'
               aria-describedby='emailHelp'
               placeholder='Your Email Address'
+              value={userEmail}
+              onChange={e => onChange(e)}
             />
-            <button className='btn btn-primary'>Join Free Now</button>
+            <button className='ml-2 btn btn-primary' type='submit'>
+              Join Free Now
+            </button>
           </form>
           <p>
             Already a member? Sing in{' '}
-            <Link href='#'>
+            <Link href='/'>
               <a>Here</a>
             </Link>{' '}
           </p>

@@ -27,7 +27,7 @@ const Footer = () => {
         </form>
         <p>
           Already part of the community? Sign in{' '}
-          <Link href='#'>
+          <Link href='/'>
             <a>Here</a>
           </Link>{' '}
         </p>

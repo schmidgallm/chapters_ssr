@@ -1,0 +1,17 @@
+.loader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.loaderGif {
+  background-image: url('/static/loader.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 75vw;
+  height: 75vh;
+}
