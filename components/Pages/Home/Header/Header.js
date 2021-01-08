@@ -19,6 +19,9 @@ const Header = () => {
   // on submit handler
   const onSubmit = e => {
     e.preventDefault();
+    if (!userEmail) {
+      return alert('Please fill in email');
+    }
     router.push({
       pathname: '/register',
       query: { data: userEmail },

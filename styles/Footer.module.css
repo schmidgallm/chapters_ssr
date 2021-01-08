@@ -29,6 +29,13 @@
   margin-top: 2rem;
 }
 
+.subscribeMessage {
+  color: red;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
 .footerCTA form input {
   height: 45px;
   width: 50%;
