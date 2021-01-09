@@ -48,3 +48,42 @@
 .footerCTA h1 {
   margin: 0;
 }
+
+@media screen and (max-width: 992px) {
+  .footer {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .footerCTA form {
+    display: block;
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .footerCTA form input {
+    height: 45px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .footerCTA form button {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .subscribeMessage {
+    color: red;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 2rem;
+  }
+
+  .footerCTA p {
+    margin-top: 2rem;
+  }
+
+  .footerCTA h1 {
+    margin: 0;
+  }
+}

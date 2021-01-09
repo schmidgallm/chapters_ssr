@@ -97,11 +97,12 @@
 
   .headerCopy h1 {
     margin: 0;
+    font-size: 3rem;
   }
 
   .headerCopy hr {
     width: 25%;
-    margin: 1rem 0;
+    margin: 2rem 0;
     margin-bottom: 2rem;
     background-color: #ff7518;
     height: 5px;
@@ -110,12 +111,13 @@
   .headerCopy h3 {
     font-size: 1.1rem;
     margin: 0;
-    font-weight: 700;
+    margin-top: 2.5rem;
+    font-weight: 300;
   }
 
   .headerCopy h4 {
     font-size: 1.1rem;
-    font-weight: 700;
+    font-weight: 300;
     margin-top: 1rem;
   }
 

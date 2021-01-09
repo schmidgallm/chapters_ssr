@@ -74,6 +74,7 @@ const Footer = () => {
             className='form-control'
             id='exampleInputEmail1'
             aria-describedby='emailHelp'
+            placeholder='Enter your email'
             onChange={e => onChange(e)}
           />
 
