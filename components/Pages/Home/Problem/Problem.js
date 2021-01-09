@@ -1,5 +1,6 @@
 // Dependencies
 import React, { useState, Fragment } from 'react';
+import Link from 'next/link';
 
 // CSS
 import styles from '../../../../styles/Problem.module.css';
@@ -23,7 +24,9 @@ const Problem = () => {
               <span>80% of people</span> seriously try writing as a career
             </li>
           </ul>
-          <button className='mt-4 btn btn-primary'>Join Free Now</button>
+          <Link href='/register'>
+            <a className='mt-4 btn btn-primary'>Join Free Now</a>
+          </Link>
         </div>
         <div>
           <p>Is Chapter Box good a good fit for you?</p>

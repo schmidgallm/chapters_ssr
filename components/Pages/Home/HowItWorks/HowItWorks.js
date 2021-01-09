@@ -1,4 +1,6 @@
+// Dependencies
 import React from 'react';
+import Link from 'next/link';
 
 import styles from '../../../../styles/HowItWorks.module.css';
 
@@ -45,7 +47,9 @@ const HowItWorks = () => {
           </p>
         </div>
       </div>
-      <button className='btn btn-primary'>Start Writing and Get Paid</button>
+      <Link href='/register'>
+        <a className='btn btn-primary'>Start Writing and Get Paid</a>
+      </Link>
     </div>
   );
 };

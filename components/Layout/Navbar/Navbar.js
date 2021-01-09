@@ -9,8 +9,8 @@ const Navbar = () => {
       <Link href='/'>
         <a className='navbar-brand ml-auto'>Chapter Box</a>
       </Link>
-      <Link href='#'>
-        <a className='ml-auto mr-5 btn btn-secondary' href='#'>
+      <Link href='/'>
+        <a className='ml-auto btn btn-secondary' href='#'>
           Sign In
         </a>
       </Link>

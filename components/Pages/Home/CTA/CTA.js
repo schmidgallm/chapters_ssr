@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const CTA = () => {
   return (
@@ -6,7 +7,9 @@ const CTA = () => {
       <h2>
         We want to bring <span>Your Stories to Life.</span> Are you in?
       </h2>
-      <button className='mt-4 btn btn-primary'>Become an Author Today</button>
+      <Link href='/register'>
+        <a className='mt-4 btn btn-primary'>Become an Author Today</a>
+      </Link>
     </div>
   );
 };

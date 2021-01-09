@@ -47,12 +47,13 @@ const Header = () => {
               type='email'
               className='form-control'
               id='exampleInputEmail1'
+              required
               aria-describedby='emailHelp'
               placeholder='Your Email Address'
               value={userEmail}
               onChange={e => onChange(e)}
             />
-            <button className='ml-2 btn btn-primary' type='submit'>
+            <button className='btn btn-primary' type='submit'>
               Join Free Now
             </button>
           </form>

@@ -1,5 +1,6 @@
 // Dependencies
 import React from 'react';
+import Link from 'next/link';
 
 // CSS
 import styles from '../../../../styles/Proof.module.css';
@@ -21,7 +22,9 @@ const Proof = () => {
             <li>Have an idea for the ending? Submit your chapter!</li>
             <li></li>
           </ul>
-          <button className='btn btn-secondary'>Join Now</button>
+          <Link href='/register'>
+            <a className='btn btn-secondary'>Join Now</a>
+          </Link>
         </div>
         <div className={styles.proofImage}></div>
       </div>

@@ -9,3 +9,13 @@
   font-weight: 700;
   font-size: 2rem;
 }
+
+.navbarBackground a:last-child {
+  margin-right: 25px;
+}
+
+@media screen and (max-wdith: 992px) {
+  .navbarBackground a:last-child {
+    margin: 0;
+  }
+}

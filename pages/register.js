@@ -22,14 +22,12 @@ export default function register() {
     setUserEmail(url);
   }, []);
 
-  return userEmail ? (
+  return (
     <AuthWrapper>
       <div className={styles.register}>
         <RegisterHeader />
         <RegisterForm userEmail={userEmail} />
       </div>
     </AuthWrapper>
-  ) : (
-    <Loader />
   );
 }

@@ -49,7 +49,7 @@ const Footer = () => {
       }
     } catch (err) {
       setLoading(false);
-      setMsg('Uh Oh! Something went wrong. Please try again');
+      setMsg('Uh Oh! Something went wrong. Please try againx');
       console.log(err);
       console.log(err.response.data);
     }
