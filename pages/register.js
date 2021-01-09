@@ -5,7 +5,6 @@ import React, { useState, useEffect } from 'react';
 import AuthWrapper from '../components/Layout/AuthWrapper';
 import RegisterHeader from '../components/Pages/Register/RegisterHeader';
 import RegisterForm from '../components/Auth/RegisterForm';
-import Loader from '../components/Layout/Loader';
 
 // CSS
 import styles from '../styles/register.module.css';

@@ -6,7 +6,6 @@ import Link from 'next/link';
 import styles from '../../../styles/RegisterForm.module.css';
 
 const RegisterForm = ({ userEmail }) => {
-  console.log('hello', userEmail);
   // init state
   const [formData, setFormData] = useState({
     firstName: '',
