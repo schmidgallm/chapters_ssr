@@ -36,6 +36,16 @@
   background-color: #00aaf0;
 }
 
+.registerErrors {
+  margin: 0;
+}
+
+.registerErrors p {
+  margin: 5px 0;
+  color: red;
+  font-size: 1.3rem;
+}
+
 @media screen and (max-width: 992px) {
   .formHr {
     width: 25%;

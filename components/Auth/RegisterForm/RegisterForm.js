@@ -1,6 +1,7 @@
 // Dependencies
 import React, { useState } from 'react';
 import Link from 'next/link';
+import axios from 'axios';
 
 // CSS
 import styles from '../../../styles/RegisterForm.module.css';
@@ -10,10 +11,12 @@ const RegisterForm = ({ userEmail }) => {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
-    email: userEmail,
+    email: '',
     password: '',
     password2: '',
   });
+  const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState([]);
 
   const { firstName, lastName, email, password, password2 } = formData;
 
@@ -22,16 +25,41 @@ const RegisterForm = ({ userEmail }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
   // on submit handler
-  const onSubmit = e => {
+  const onSubmit = async e => {
+    setLoading(true);
     e.preventDefault();
     if (password !== password2) {
       // set alert here
-      alert('Passwords dont match');
+      return alert('Passwords dont match');
     }
-    // Redirect to app domain with token
-  };
+    const url = 'http://localhost:5000/api/v1/auth/register';
+    try {
+      const request = await axios({
+        method: 'POST',
+        url,
+        headers: { 'Content-Type': 'application/json' },
+        data: {
+          firstName,
+          lastName,
+          email,
+          password,
+        },
+      });
 
-  // Redirect on successful registeration
+      console.log(request);
+
+      // once request is complete redirect to app domain
+      if (request.status === 200 && request.data) {
+        // set loading to false
+        setLoading(false);
+        // Redirect to app domain
+      }
+    } catch (err) {
+      console.log(err);
+      console.log(err.response.data.errors);
+      setErrors(err.response.data.errors);
+    }
+  };
 
   return (
     <div className={styles.registerForm}>
@@ -103,7 +131,15 @@ const RegisterForm = ({ userEmail }) => {
               required
             />
           </div>
-
+          {errors && (
+            <div className={styles.registerErrors}>
+              {errors.map((err, i) => (
+                <p className='animate__animated animate__slideInRight' key={i}>
+                  {err.msg}
+                </p>
+              ))}
+            </div>
+          )}
           <button type='submit' className='register-btn btn btn-primary'>
             Submit
           </button>
