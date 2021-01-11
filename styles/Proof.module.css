@@ -39,9 +39,8 @@
   margin: 10px 0;
 }
 
-.proofHeader button {
+.proofLink {
   display: flex;
-  margin: 0;
 }
 
 .proofImage {
@@ -80,9 +79,12 @@
     margin: 10px 0;
   }
 
-  .proofHeader button {
-    width: 100%;
+  .proofLink {
     display: block;
+  }
+
+  .proofLink a {
+    width: 100%;
   }
 
   .proofImage {

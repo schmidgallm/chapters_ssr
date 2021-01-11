@@ -22,9 +22,11 @@ const Proof = () => {
             <li>Have an idea for the ending? Submit your chapter!</li>
             <li></li>
           </ul>
-          <Link href='/register'>
-            <a className='btn btn-secondary'>Join Now</a>
-          </Link>
+          <div className={styles.proofLink}>
+            <Link href='/register'>
+              <a className='btn btn-secondary'>Join Now</a>
+            </Link>
+          </div>
         </div>
         <div className={styles.proofImage}></div>
       </div>

@@ -42,21 +42,16 @@
   margin-top: 1rem;
 }
 
-.headerCopy form {
-  display: flex;
-  align-items: center;
-  margin-top: 2rem;
-}
-
-.headerCopy form input {
-  padding: 10px;
+.headerCopy button {
+  margin-top: 1rem;
   width: 45%;
-  box-shadow: 2px 2px 5px #2e2e2e62;
 }
 
-.headerCopy form button {
-  margin-left: 10px;
+.headerCopy button a {
+  text-decoration: none;
+  color: #fff;
   font-weight: 700;
+  font-size: 1.1rem;
 }
 
 .headerCopy p {
@@ -64,13 +59,17 @@
 }
 
 .headerImage {
-  margin-top: 0;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 5rem;
 }
 
 .headerImage img {
-  height: 100%;
-  width: 50%;
+  height: 90%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -121,19 +120,7 @@
     margin-top: 1rem;
   }
 
-  .headerCopy form {
-    flex-direction: column;
-    width: 95%;
-  }
-
-  .headerCopy form input {
-    width: 100%;
-  }
-
-  .headerCopy form button {
-    margin-left: 0;
-    margin-top: 20px;
-    font-weight: 700;
+  .headerCopy button {
     width: 100%;
   }
 

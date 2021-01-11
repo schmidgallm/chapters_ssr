@@ -2,11 +2,15 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import axios from 'axios';
+import { useRouter } from 'next/router';
 
 // CSS
 import styles from '../../../styles/RegisterForm.module.css';
 
-const RegisterForm = ({ userEmail }) => {
+const RegisterForm = () => {
+  // init nextjs router
+  const router = useRouter();
+
   // init state
   const [formData, setFormData] = useState({
     firstName: '',
@@ -52,7 +56,8 @@ const RegisterForm = ({ userEmail }) => {
       if (request.status === 200 && request.data) {
         // set loading to false
         setLoading(false);
-        // Redirect to app domain
+        // redirect to redirect page
+        router.push('/success');
       }
     } catch (err) {
       console.log(err);
@@ -141,7 +146,16 @@ const RegisterForm = ({ userEmail }) => {
             </div>
           )}
           <button type='submit' className='register-btn btn btn-primary'>
-            Submit
+            {loading ? (
+              <img
+                src='/static/loader_alt.gif'
+                alt='loading'
+                height={20}
+                width={80}
+              />
+            ) : (
+              'Submit'
+            )}
           </button>
           <hr className={styles.formBottomHr} />
           <p>
