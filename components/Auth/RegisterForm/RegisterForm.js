@@ -60,6 +60,8 @@ const RegisterForm = () => {
         router.push('/success');
       }
     } catch (err) {
+      // set loading to false
+      setLoading(false);
       console.log(err);
       console.log(err.response.data.errors);
       setErrors(err.response.data.errors);
