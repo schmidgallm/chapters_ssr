@@ -36,7 +36,7 @@ const RegisterForm = () => {
       // set alert here
       return alert('Passwords dont match');
     }
-    const url = 'http://localhost:5000/api/v1/auth/register';
+    const url = 'https://chapters-api.herokuapp.com/api/v1/auth/register';
     try {
       const request = await axios({
         method: 'POST',

@@ -29,7 +29,7 @@ const Footer = () => {
     }
 
     // send post request
-    const url = 'http://localhost:5000/api/v1';
+    const url = 'https://chapters-api.herokuapp.com';
     try {
       const request = await axios({
         method: 'POST',
