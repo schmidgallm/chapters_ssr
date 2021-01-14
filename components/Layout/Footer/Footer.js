@@ -104,11 +104,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-/*
-  <div className={styles.socialLinks}>
-          <i class='fa fa-facebook'></i>
-          <i class='fa fa-twitter'></i>
-          <i class='fa fa-linkedin'></i>
-        </div>
-*/
