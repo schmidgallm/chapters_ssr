@@ -29,11 +29,10 @@ const Footer = () => {
     }
 
     // send post request
-    const url = process.env.API_ENDPOINT;
     try {
       const request = await axios({
         method: 'POST',
-        url: `${url}/subscribe`,
+        url: `${process.env.NEXT_PUBLIC_API_ENDPOINT}/subscribe`,
         headers: { 'Content-Type': 'application/json' },
         data: {
           email: userEmail,
