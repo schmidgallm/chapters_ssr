@@ -36,7 +36,7 @@ const RegisterForm = () => {
       // set alert here
       return alert('Passwords dont match');
     }
-    const url = `${process.env.API_ENDPOINT}/v1/auth/register`;
+    const url = `${process.env.API_ENDPOINT}/auth/register`;
     try {
       const request = await axios({
         method: 'POST',
