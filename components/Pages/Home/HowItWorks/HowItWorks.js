@@ -11,44 +11,41 @@ const HowItWorks = () => {
         <span>Writing is hard.</span> So we make it easy.
       </h2>
       <p className={`mt-3 ${styles.paragraph}`}>
-        3 step process to bring your ideas to life. Have an idea on how the next
-        chapter should happen? Just submit your idea and best idea is voted.
+        You have the ideas, we have the words. From beginner to advanced, follow
+        our super easy to follow process and your story can become reality in no
+        time.
       </p>
 
       <div className={styles.steps}>
         <div className={styles.step}>
-          <span>Step 1</span>
-          <i className='fa fa-lightbulb-o'></i>
-          <h4>Story Creation</h4>
+          <i class='fa fa-compass'></i>
+          <h4>Book Coaching</h4>
           <p>
-            Create a prompt for the creation of the story or vote on your
-            favorite submitted prompt. This will be what the entire story plot
-            will be generated from.
+            Self paced, guided step by step instructions on crafting your book.
           </p>
         </div>
         <div className={styles.step}>
-          <span>Step 2</span>
           <i className='fa fa-paragraph'></i>
-          <h4>Chapter Submissions</h4>
+          <h4>Book Editing</h4>
           <p>
-            We guide you on the basic plot points for each of the 10 chapters to
-            help you with focusing on the creative. Submit what you think should
-            happen then vote on best one.
+            Our grammar police will tie in all those loose ends and mistakes.
           </p>
         </div>
         <div className={styles.step}>
-          <span>Step 3</span>
           <i className='fa fa-edit'></i>
-          <h4>Editing & Publishing</h4>
+          <h4>Book Writing</h4>
           <p>
-            After all chapters are submitted, the story gets edited and
-            published. Authors of chosen prompt and each chapter are marked as
-            co-authors.
+            We do all the writing and take your idea into a professional book.
           </p>
+        </div>
+        <div className={styles.step}>
+          <i className='fa fa-book'></i>
+          <h4>Book Publishing</h4>
+          <p>Taking your finsihed manuscript and publishing it to the world.</p>
         </div>
       </div>
       <Link href='/register'>
-        <a className='btn btn-primary'>Start Writing and Get Paid</a>
+        <a className='btn btn-primary'>Start Your Book Now</a>
       </Link>
     </div>
   );

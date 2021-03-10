@@ -15,8 +15,8 @@ export default function Home() {
     <Wrapper>
       <main>
         <Header />
-        <Comparison />
         <HowItWorks />
+        <Comparison />
         <Proof />
         <Problem />
         <CTA />

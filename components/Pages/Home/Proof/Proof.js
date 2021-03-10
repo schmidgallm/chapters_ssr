@@ -10,18 +10,12 @@ const Proof = () => {
     <div className='section section-dark'>
       <div className={styles.proof}>
         <div className={styles.proofHeader}>
-          <h2>
-            Its like a "Choose your own adventure" but you get to create it!
-          </h2>
+          <h2>Everyone deserves to be a great selling author.</h2>
           <hr />
-          <ul>
-            <li>Have a great story idea? Submit a prompt to be chosen</li>
-            <li>
-              Tired of a character? Write the next chapter and remove them.
-            </li>
-            <li>Have an idea for the ending? Submit your chapter!</li>
-            <li></li>
-          </ul>
+          <p>
+            Take all the fear and guess work out of creating a book. Follow our
+            step by step process and being your journey today.
+          </p>
           <div className={styles.proofLink}>
             <Link href='/register'>
               <a className='btn btn-secondary'>Join Now</a>

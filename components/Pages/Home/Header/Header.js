@@ -1,25 +1,40 @@
 // Dependencies
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import Link from 'next/link';
+import Typed from 'typed.js';
 
 // CSS
 import styles from '../../../../styles/Header.module.css';
 
 const Header = () => {
+  const typeTarget = useRef(null);
+  useEffect(() => {
+    const typed = new Typed(typeTarget.current, {
+      strings: ['Write', 'Plan', 'Edit', 'Publish'],
+      typeSpeed: 125,
+      loop: true,
+      backSpeed: 75,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   return (
     <div className={styles.header}>
       <div className={styles.headerWrapper}>
         <div className={styles.headerCopy}>
           <h1>
-            Everyone has an <span>Idea</span>. Anyone can become an{' '}
-            <span>Author</span>
+            Professional Book services helping beginner authors
+            <br />
+            <span ref={typeTarget} /> their first book.
           </h1>
           <hr />
-          <h3>
-            Community based novels where you control the story. Each chapter is
-            created by you and chosen chapter is voted by community.
-          </h3>
-          <h4>Start 2021 brand new and make money one chapter at a time.</h4>
+          <h4>
+            Everyone has an <span>Idea</span>. Anyone can become an{' '}
+            <span>Author</span>
+          </h4>
           <button className='btn btn-primary'>
             <Link href='/register'>
               <a>Join Free Now</a>
@@ -33,7 +48,12 @@ const Header = () => {
           </p>
         </div>
         <div className={styles.headerImage}>
-          <img src='/static/chapters_header_book.png' alt='spinning book' />
+          <div className={styles.imageContainer}>
+            <img
+              src='/static/chapters_header_book.png'
+              alt='book mockup showing your name as author'
+            />
+          </div>
         </div>
       </div>
     </div>

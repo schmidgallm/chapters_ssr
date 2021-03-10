@@ -1,17 +1,13 @@
 .navbarBackground {
-  background-color: #22272d;
-  color: #2e2e2e;
-  height: 8vh;
+  height: 14vh;
 }
 
-.navbarBackground a:first-child {
-  color: #fff;
-  font-weight: 700;
-  font-size: 2rem;
+.navbarBackground ul li {
+  margin: 0 10px;
 }
 
-.navbarBackground a:last-child {
-  margin-right: 25px;
+.navbarBackground ul li a {
+  font-weight: bold;
 }
 
 @media screen and (max-wdith: 992px) {

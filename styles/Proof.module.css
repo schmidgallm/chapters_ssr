@@ -25,22 +25,18 @@
   height: 5px;
 }
 
-.proofHeader ul {
-  list-style: none;
+.proofHeader p {
   padding: 0;
   margin: 0;
   text-align: left;
-}
-
-.proofHeader ul li {
   color: #fff;
-  display: flex;
   font-size: 1.3rem;
   margin: 10px 0;
 }
 
 .proofLink {
   display: flex;
+  margin-top: 20px;
 }
 
 .proofImage {
