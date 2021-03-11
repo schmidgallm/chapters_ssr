@@ -16,9 +16,9 @@ export default function Home() {
       <main>
         <Header />
         <HowItWorks />
-        <Comparison />
         <Proof />
         <Problem />
+        <Comparison />
         <CTA />
       </main>
     </Wrapper>

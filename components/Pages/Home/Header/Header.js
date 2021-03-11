@@ -35,11 +35,11 @@ const Header = () => {
             Everyone has an <span>Idea</span>. Anyone can become an{' '}
             <span>Author</span>
           </h4>
-          <button className='btn btn-primary'>
-            <Link href='/register'>
-              <a>Join Free Now</a>
-            </Link>
-          </button>
+          <Link href='/register'>
+            <a className={`btn btn-primary ${styles.headerCTA}`}>
+              Join Free Now
+            </a>
+          </Link>
           <p>
             Already a member? Sing in{' '}
             <Link href='/'>
@@ -47,12 +47,16 @@ const Header = () => {
             </Link>{' '}
           </p>
         </div>
-        <div className={styles.headerImage}>
-          <div className={styles.imageContainer}>
-            <img
-              src='/static/chapters_header_book.png'
-              alt='book mockup showing your name as author'
-            />
+        <div className={styles.headerVideo}>
+          <div className={styles.headerVideoContainer}>
+            <iframe
+              frameBorder='0'
+              width='560'
+              height='315'
+              src='https://biteable.com/watch/embed/frank-character-explainer-copy-2811131/eb6d7ee415b0f622a176e5d14e3c333e'
+              allowFullScreen='true'
+              allow='autoplay'
+            ></iframe>
           </div>
         </div>
       </div>
