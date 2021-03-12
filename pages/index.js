@@ -18,7 +18,6 @@ export default function Home() {
         <HowItWorks />
         <Proof />
         <Problem />
-        <Comparison />
         <CTA />
       </main>
     </Wrapper>

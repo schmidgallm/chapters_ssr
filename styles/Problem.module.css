@@ -6,41 +6,26 @@
   margin: 0 auto;
 }
 
-.problem > div:first-child {
+.problemHeader {
   text-align: left;
 }
 
-.problem h2 {
+.problemHeader h2 {
   text-align: left;
   font-size: 2rem;
   font-weight: 700;
-  margin: 0;
+  margin-bottom: 2rem;
 }
 
-.problem hr {
+.problemHeader h2 span {
+  color: #00aaf0;
+}
+
+.problemHeader hr {
   width: 25%;
   margin: 2rem 0;
   background-color: #ff7518;
   height: 5px;
-}
-
-.problem ul {
-  margin: 0;
-  padding: 0;
-}
-
-.problem ul li {
-  font-weight: 700;
-  font-size: 1.3rem;
-  margin: 10px 0;
-}
-
-.problem ul li span {
-  color: #00aaf0;
-}
-
-.problem p {
-  text-align: left;
 }
 
 .option {
@@ -66,10 +51,21 @@
   color: #00aaf0;
 }
 
+.problemImageContainer {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+
+.problemImageContainer img {
+  width: 70%;
+}
+
 @media screen and (max-width: 992px) {
   .problem {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
     gap: 2rem;
     width: 95%;
     margin: 0 auto;
@@ -80,27 +76,6 @@
     margin: 2rem 0;
     background-color: #ff7518;
     height: 5px;
-  }
-
-  .problem ul {
-    list-style: none;
-  }
-
-  .problem ul li {
-    font-weight: 700;
-    font-size: 1.3rem;
-    margin: 10px 0;
-  }
-
-  .problem ul li span {
-    color: #00aaf0;
-  }
-
-  .problem p {
-    text-align: left;
-    font-weight: 700;
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
   }
 
   .option {

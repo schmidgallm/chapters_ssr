@@ -23,6 +23,9 @@ const HowItWorks = () => {
           <p>
             Self paced, guided step by step instructions on crafting your book.
           </p>
+          <Link href='/coaching'>
+            <a className='btn btn-outline-primary'>See More</a>
+          </Link>
         </div>
         <div className={styles.step}>
           <i className='fa fa-paragraph'></i>
@@ -30,6 +33,9 @@ const HowItWorks = () => {
           <p>
             Our grammar police will tie in all those loose ends and mistakes.
           </p>
+          <Link href='/editing'>
+            <a className='btn btn-outline-primary'>See More</a>
+          </Link>
         </div>
         <div className={styles.step}>
           <i className='fa fa-edit'></i>
@@ -37,15 +43,21 @@ const HowItWorks = () => {
           <p>
             We do all the writing and take your idea into a professional book.
           </p>
+          <Link href='/writing'>
+            <a className='btn btn-outline-primary'>See More</a>
+          </Link>
         </div>
         <div className={styles.step}>
           <i className='fa fa-book'></i>
           <h4>Book Publishing</h4>
           <p>Taking your finsihed manuscript and publishing it to the world.</p>
+          <Link href='/publishing'>
+            <a className='btn btn-outline-primary'>See More</a>
+          </Link>
         </div>
       </div>
-      <Link href='/register'>
-        <a className='btn btn-primary'>Start Your Book Now</a>
+      <Link href='/virtualtour'>
+        <a className='btn btn-primary'>Take a Virtual Tour Of Platform</a>
       </Link>
     </div>
   );
