@@ -24,6 +24,7 @@ const Header = () => {
   return (
     <div className={styles.header}>
       <div className={styles.headerWrapper}>
+        {/* Header Copy */}
         <div className={styles.headerCopy}>
           <h1>
             Professional Book services helping beginner authors
@@ -47,17 +48,17 @@ const Header = () => {
             </Link>{' '}
           </p>
         </div>
-        <div className={styles.headerVideo}>
-          <div className={styles.headerVideoContainer}>
-            <iframe
-              frameBorder='0'
-              width='560'
-              height='315'
-              src='https://biteable.com/watch/embed/frank-character-explainer-copy-2811131/eb6d7ee415b0f622a176e5d14e3c333e'
-              allowFullScreen='true'
-              allow='autoplay'
-            ></iframe>
-          </div>
+
+        {/* Header Video  */}
+        <div className={styles.playerWrapper}>
+          <iframe
+            frameBorder='0'
+            width='560'
+            height='315'
+            src='https://biteable.com/watch/embed/frank-character-explainer-copy-2811131'
+            allowFullScreen='true'
+            allow='autoplay'
+          ></iframe>
         </div>
       </div>
     </div>
