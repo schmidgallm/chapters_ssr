@@ -12,7 +12,7 @@ import CTA from '../components/Pages/Home/CTA';
 
 export default function Home() {
   return (
-    <Wrapper>
+    <Wrapper title='Chapter Box | Everyone has a story'>
       <main>
         <Header />
         <HowItWorks />

@@ -56,7 +56,7 @@ const Header = () => {
             width='560'
             height='315'
             src='https://biteable.com/watch/embed/frank-character-explainer-copy-2811131'
-            allowFullScreen='true'
+            allowFullScreen={true}
             allow='autoplay'
           ></iframe>
         </div>

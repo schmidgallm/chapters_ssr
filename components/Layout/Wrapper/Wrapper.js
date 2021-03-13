@@ -12,7 +12,7 @@ import styles from '../../../styles/Wrapper.module.css';
 const Wrapper = props => {
   return (
     <div className={styles.layoutWrapper}>
-      <NextHead />
+      <NextHead title={props.title} />
       <Navbar />
       {props.children}
       <Footer />

@@ -18,7 +18,7 @@ const HowItWorks = () => {
 
       <div className={styles.steps}>
         <div className={styles.step}>
-          <i class='fa fa-compass'></i>
+          <i className='fa fa-compass'></i>
           <h4>Book Coaching</h4>
           <p>
             Self paced, guided step by step instructions on crafting your book.

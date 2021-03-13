@@ -100,4 +100,12 @@
   .option i:last-child {
     color: #00aaf0;
   }
+
+  .problemImageContainer {
+    text-align: center;
+  }
+
+  .problemImageContainer img {
+    width: 100%;
+  }
 }

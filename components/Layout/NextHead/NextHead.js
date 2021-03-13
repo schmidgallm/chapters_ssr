@@ -2,10 +2,10 @@
 import React from 'react';
 import Head from 'next/head';
 
-const NextHead = () => {
+const NextHead = props => {
   return (
     <Head>
-      <title>Chapter Box</title>
+      <title>{props.title}</title>
       <link rel='icon' href='/favicon.ico' />
       <link
         rel='stylesheet'
