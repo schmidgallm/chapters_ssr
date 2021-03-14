@@ -1,0 +1,40 @@
+.header {
+  height: 50vh;
+  background-image: url('/static/chapters_header_background_alt10.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 120em;
+  background-color: #0b1b39;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header h1 {
+  font-weight: 600;
+  font-size: 3rem;
+  color: #fff;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.header h1 span {
+  color: #00aaf0;
+}
+
+.copy {
+  text-align: left;
+  width: 45%;
+  margin: 50px auto;
+  font-size: 18px;
+}
+
+.copy h4 {
+  font-weight: bold;
+}
+
+.services {
+  margin-top: 50px;
+}

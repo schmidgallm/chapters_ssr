@@ -9,7 +9,7 @@ const Navbar = () => {
       className={`navbar navbar-expand-lg navbar-light ${styles.navbarBackground}`}
     >
       <div className='container'>
-        <a className={styles.navbarBrand} href='#'>
+        <a className={styles.navbarBrand} href='/'>
           <img
             src='/static/logo.svg'
             width='270'
@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
           <ul className='navbar-nav ml-auto'>
             <li className='nav-item active'>
-              <Link href='/descripton'>
+              <Link href='/about'>
                 <a className='nav-link'>Why Chapter Box?</a>
               </Link>
             </li>
