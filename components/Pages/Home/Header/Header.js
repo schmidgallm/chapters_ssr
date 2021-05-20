@@ -10,7 +10,7 @@ const Header = () => {
   const typeTarget = useRef(null);
   useEffect(() => {
     const typed = new Typed(typeTarget.current, {
-      strings: ['Write', 'Plan', 'Edit', 'Publish'],
+      strings: ['Plan', 'Write', 'Edit', 'Publish'],
       typeSpeed: 125,
       loop: true,
       backSpeed: 75,

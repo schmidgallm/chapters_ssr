@@ -4,21 +4,22 @@ import React from 'react';
 // Components
 import Wrapper from '../components/Layout/Wrapper';
 import Header from '../components/Pages/Home/Header';
-import Comparison from '../components/Pages/Home/Comparison';
-import Problem from '../components/Pages/Home/Problem';
-import HowItWorks from '../components/Pages/Home/HowItWorks';
-import Proof from '../components/Pages/Home/Proof';
+import TheProblem from '../components/Pages/Home/TheProblem';
+import TheGuide from '../components/Pages/Home/TheGuide';
+import ThePlan from '../components/Pages/Home/ThePlan';
 import CTA from '../components/Pages/Home/CTA';
+import SuccessNotFailure from '../components/Pages/Home/SuccessNotFailure';
 
 export default function Home() {
   return (
     <Wrapper title='Chapter Box | Everyone has a story'>
       <main>
         <Header />
-        <HowItWorks />
-        <Proof />
-        <Problem />
+        <TheProblem />
+        <TheGuide />
+        <ThePlan />
         <CTA />
+        <SuccessNotFailure />
       </main>
     </Wrapper>
   );

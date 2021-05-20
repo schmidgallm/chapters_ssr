@@ -86,6 +86,9 @@ h4 span {
   background-position: center;
 }
 
+.section-alt {
+  background-color: #f5f6f7;
+}
 .section-dark-alt {
   background-color: var(--bg-dark);
 }

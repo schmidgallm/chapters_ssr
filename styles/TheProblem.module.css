@@ -1,0 +1,37 @@
+.sectionFlex {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  min-height: 30vh;
+  width: 75%;
+  margin: 3rem auto;
+}
+
+.sectionCopy {
+  text-align: left;
+}
+
+.sectionCopy h4 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.sectionCopy h4 span {
+  color: #00aaf0;
+}
+
+.sectionCopy p {
+  font-size: 1.2rem;
+}
+
+.sectionImage {
+  background-image: url('/static/problem.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sectionImage img {
+  width: 100%;
+}

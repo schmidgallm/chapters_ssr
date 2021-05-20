@@ -1,8 +1,8 @@
 import React from 'react';
 
-import styles from '../../../../styles/Comparison.module.css';
+import styles from '../../../../styles/SuccessNotFailure.module.css';
 
-const Comparison = () => {
+const SuccessNotFailure = () => {
   return (
     <div className={styles.comparison}>
       <div className={styles.comparisonSection}>
@@ -43,4 +43,4 @@ const Comparison = () => {
   );
 };
 
-export default Comparison;
+export default SuccessNotFailure;
