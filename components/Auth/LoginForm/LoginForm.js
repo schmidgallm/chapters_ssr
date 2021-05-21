@@ -17,6 +17,7 @@ const LoginForm = () => {
     password: '',
   });
   const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState(null);
 
   const { email, password } = formData;
 
@@ -54,6 +55,7 @@ const LoginForm = () => {
       setLoading(false);
       console.log(err);
       console.log(err.response.data.errors);
+      setErrors(err.response.data.errors);
     }
   };
 
