@@ -6,7 +6,7 @@ import styles from '../../../../styles/ThePlan.module.css';
 
 const ThePlan = () => {
   return (
-    <div className='section section-alt'>
+    <div className={`section section-alt ${styles.skew}`}>
       <h2>
         How <span>It Works</span>
       </h2>
@@ -46,7 +46,9 @@ const ThePlan = () => {
         </div>
       </div>
       <Link href='/virtualtour'>
-        <a className='btn btn-primary'>Begin Your Book Now</a>
+        <a className={`btn btn-primary ${styles.skewChange}`}>
+          Begin Your Book Now
+        </a>
       </Link>
     </div>
   );

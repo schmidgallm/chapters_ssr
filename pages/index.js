@@ -18,8 +18,8 @@ export default function Home() {
         <TheProblem />
         <TheGuide />
         <ThePlan />
-        <CTA />
         <SuccessNotFailure />
+        <CTA />
       </main>
     </Wrapper>
   );
