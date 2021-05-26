@@ -14,25 +14,38 @@ const TheGuide = () => {
           <h2>
             What is <span>Chapter Box?</span>
           </h2>
-          <h3>
-            Easy-to-use methodology to write, develop, and publish a book.
-          </h3>
-          <br />
-          <p>
-            The global pandemic has made people realize that today is the day to
-            start doing the things they have been putting off. You have always
-            wanted to make your stories come to life. Now is the time.
-          </p>
+          <ul>
+            <li>
+              <h3>
+                Easy-to-use methodology to write, develop, and publish a book.
+              </h3>
+            </li>
+            <li>
+              <h3>Organizer of your thoughts and plot.</h3>
+            </li>
+            <li>
+              <h3>Book in a box template for you to follow.</h3>
+            </li>
+          </ul>
         </div>
       </div>
       <div className='section section'>
         <h2>
           Everyone deserves to be a <span>great selling author.</span>
         </h2>
-        <h4 className='mb-5'>
-          Take all the fear and guess work out of creating a book. Follow our
-          step by step process and being your journey today.
-        </h4>
+        <hr className={styles.guideHr} />
+        <div className={styles.guideCopy}>
+          <p>
+            Take all the fear and guess work out of creating a book. Follow our
+            step by step process and being your journey today.
+          </p>
+          <p>
+            The global pandemic has made people realize that today is the day to
+            start doing the things they have been putting off. You have always
+            wanted to make your stories come to life. Now is the time.
+          </p>
+        </div>
+
         <div className={styles.guide}>
           <div className={styles.guideImageContainer}>
             <img

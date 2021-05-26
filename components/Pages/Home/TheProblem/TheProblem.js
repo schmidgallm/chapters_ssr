@@ -7,7 +7,7 @@ import styles from '../../../../styles/TheProblem.module.css';
 const TheProblem = () => {
   return (
     <div className='section'>
-      <h2 className='mb-3'>
+      <h2>
         <span>Writing is hard.</span> So we make it easy.
       </h2>
       <div className={styles.sectionFlex}>
@@ -16,6 +16,7 @@ const TheProblem = () => {
           <h4>
             Turn your idea into a <span>fully published book.</span>
           </h4>
+          <hr className={styles.problemHr} />
           <p>
             Villian: Stop fearing the blank page and how to actually write and
             plan a book. You have a great idea so let us handle the heavy

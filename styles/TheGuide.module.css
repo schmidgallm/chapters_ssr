@@ -18,6 +18,10 @@
   transform: skewY(5deg);
 }
 
+.guideHr {
+  display: none;
+}
+
 .graphCopy button {
   width: 25%;
 }
@@ -30,6 +34,16 @@
   margin: 0 auto;
 }
 
+.guideCopy {
+  font-size: 1.3rem;
+  width: 75%;
+  margin: 1rem auto;
+  margin-bottom: 5rem;
+}
+
+.guideCopy p {
+  margin: 0;
+}
 .guideHeader {
   text-align: left;
 }
@@ -87,49 +101,62 @@
 }
 
 @media screen and (max-width: 992px) {
-  .guide {
+  /* Graph Section */
+  .graph {
     display: flex;
     flex-direction: column-reverse;
-    gap: 2rem;
-    width: 95%;
-    margin: 0 auto;
+    background-image: none;
+    height: 100%;
+    min-height: 70vh;
+    transform: skewY(-5deg);
   }
 
-  .guide hr {
-    width: 25%;
-    margin: 2rem 0;
-    background-color: #ff7518;
-    height: 5px;
+  .graphImg {
+    background-image: url('/static/graph.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
   }
 
-  .option {
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    background-color: #e9e9e9;
-    padding: 15px;
-    margin-bottom: 15px;
-    box-shadow: 2px 2px 5px #7a7a7a7c;
-  }
-
-  .option h5 {
-    margin: 0;
-  }
-
-  .option i:first-child {
-    margin-right: 1rem;
-    color: #ff7518;
-  }
-
-  .option i:last-child {
-    color: #00aaf0;
-  }
-
-  .guideImageContainer {
+  .graphCopy h2 {
+    margin-bottom: 1.2rem;
     text-align: center;
   }
 
+  .guideHr {
+    height: 5px;
+    background-color: #ff7518;
+    width: 25%;
+    margin: 0.75rem 0;
+  }
+
+  .graphCopy h3 {
+    font-size: 1.3rem;
+    margin: 0;
+  }
+
+  /* Spinning Book Section */
+  .guide {
+    grid-template-columns: 1fr;
+    gap: 0;
+    width: 95%;
+  }
+
+  .guideCopy {
+    font-size: 1.1rem;
+    text-align: left;
+    width: 95%;
+    margin: 1rem auto;
+    margin-bottom: 2rem;
+  }
+
+  .guideCopy p {
+    margin: 10px 0;
+  }
+
   .guideImageContainer img {
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
   }
 }
