@@ -38,7 +38,7 @@ const Header = () => {
           </h4>
           <Link href='/register'>
             <a className={`btn btn-primary ${styles.headerCTA}`}>
-              Join Free Now
+              START YOUR BOOK NOW
             </a>
           </Link>
           <p>
