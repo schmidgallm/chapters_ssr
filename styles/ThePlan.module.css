@@ -1,13 +1,6 @@
-.paragraph {
-  margin: 0;
-  width: 65%;
-  margin: 0 auto;
-  font-size: 1.3rem;
-}
-
 .steps {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   width: 85%;
   margin: 5rem auto;
@@ -52,10 +45,5 @@
     width: 95%;
     grid-template-columns: 1fr;
     margin: 2rem auto;
-  }
-
-  .paragraph {
-    width: 95%;
-    font-size: 1rem;
   }
 }

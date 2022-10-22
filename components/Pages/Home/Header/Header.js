@@ -10,7 +10,7 @@ const Header = () => {
   const typeTarget = useRef(null);
   useEffect(() => {
     const typed = new Typed(typeTarget.current, {
-      strings: ['Write', 'Plan', 'Edit', 'Publish'],
+      strings: ['Plan', 'Write', 'Edit', 'Publish'],
       typeSpeed: 125,
       loop: true,
       backSpeed: 75,
@@ -38,7 +38,7 @@ const Header = () => {
           </h4>
           <Link href='/register'>
             <a className={`btn btn-primary ${styles.headerCTA}`}>
-              Join Free Now
+              START YOUR BOOK NOW
             </a>
           </Link>
           <p>

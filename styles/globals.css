@@ -10,6 +10,7 @@
   --bg-secondary: #00aaf0;
   --bg-accent1: #432f79;
   --bg-accent2: #e3d759;
+  --bg-accent3: #008cb7;
 }
 
 html,
@@ -86,6 +87,9 @@ h4 span {
   background-position: center;
 }
 
+.section-alt {
+  background-color: #f5f6f7;
+}
 .section-dark-alt {
   background-color: var(--bg-dark);
 }

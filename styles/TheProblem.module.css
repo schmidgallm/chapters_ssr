@@ -1,0 +1,79 @@
+.sectionFlex {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  min-height: 30vh;
+  width: 75%;
+  margin: 3rem auto;
+}
+
+.sectionCopy {
+  text-align: left;
+}
+
+.sectionCopy h4 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.sectionCopy h4 span {
+  color: #00aaf0;
+}
+
+.sectionCopy ul {
+  padding: 0;
+}
+.sectionCopy ul li {
+  list-style: none;
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+
+.sectionCopy ul li i {
+  margin-right: 10px;
+  color: #ff7518;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.sectionImage {
+  background-image: url('/static/problem.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sectionImage img {
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .sectionFlex {
+    display: block;
+    margin: 1rem auto;
+    gap: 0;
+    width: 95%;
+  }
+
+  .sectionImage {
+    height: 300px;
+  }
+
+  .sectionCopy h4 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    font-weight: normal;
+  }
+
+  .problemHr {
+    height: 5px;
+    background-color: #ff7518;
+    width: 25%;
+    margin: 0.75rem 0;
+  }
+}

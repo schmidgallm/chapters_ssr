@@ -15,8 +15,24 @@
 .comparisonSection h2 {
   color: #fff;
   font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.comparisonSection:nth-child(even) h2:nth-child(odd) {
+  color: #2e2e2e;
+}
+
+.black {
+  color: #2e2e2e;
+}
+
+.comparisonSection h2 span {
+  color: #ff7518;
+}
+
+.comparisonSection:nth-child(even) h2 span {
   color: #00aaf0;
-  font-size: 10rem;
 }
 
 .comparisonSection ul {
@@ -30,7 +46,12 @@
   font-size: 1.5rem;
 }
 
-.comparisonSection ul li i {
+.comparisonSection:nth-child(odd) ul li i {
+  margin-right: 20px;
+  color: #ff7518;
+}
+
+.comparisonSection:nth-child(even) ul li i {
   margin-right: 20px;
   color: #00aaf0;
 }
