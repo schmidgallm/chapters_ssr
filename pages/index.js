@@ -10,6 +10,7 @@ import HowItWorks from '../components/Pages/Home/HowItWorks';
 import Proof from '../components/Pages/Home/Proof';
 import CTA from '../components/Pages/Home/CTA';
 
+// Hey I'm coding again!!
 export default function Home() {
   return (
     <Wrapper title='Chapter Box | Everyone has a story'>
